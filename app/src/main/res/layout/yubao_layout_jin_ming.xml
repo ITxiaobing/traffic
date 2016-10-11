@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/yubao_jintian_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/today"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <TextView
+
+        android:id="@+id/today_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/yubao_jintian_txt"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="晴"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/yubao_jintian_txt_duoyunzhuanqing"
+        android:layout_alignBottom="@+id/yubao_jintian_txt_duoyunzhuanqing"
+        android:layout_alignLeft="@+id/yubao_mingtian_txt"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/yubao_mingtian_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/yubao_jintian_pic"
+        android:src="@drawable/l_w1"/>
+
+    <TextView
+        android:id="@+id/tomorrow_wendu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/yubao_jintian_txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:text="@string/qiwen_weather"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+
+    <View
+        android:id="@+id/vertical"
+        android:layout_width="1dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/yubao_mingtian_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/yubao_mingtian_pic"
+        android:layout_alignBaseline="@id/yubao_jintian_txt"
+        android:layout_marginRight="19dp"
+        android:layout_toRightOf="@id/vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/tomorrow"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/yubao_jintian_tianqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yubao_mingtian_txt"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/vertical"
+        android:textColor="@color/white"
+       android:layout_marginTop="20dp"
+        android:text="多云"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/yubao_jintian_txt_duoyunzhuanqing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yubao_jintian_txt"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/vertical"
+        android:text="@string/qiwen_weather"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/yubao_jintian_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/vertical"
+        android:layout_below="@+id/yubao_jintian_txt_duoyunzhuanqing"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/l_w1"
+        android:textColor="@color/black"/>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/vertical"
+        android:background="@color/white"/>
+
+</RelativeLayout>

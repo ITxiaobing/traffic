@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="activity_background">#e9eaec</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="red">#F2837B</color>
+
+    <color name="tabBlue">#00bcd2</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="tan_white">#7a7468</color>
+    <color name="orange">#ff9c00</color>
+    <color name="gray_line">#C3B2BC</color>
+    <color name="background_leidaweixing_gbt1">#ACACAC</color>
+    <color name="background_leidaweixing_gbt2">#737373</color>
+</resources>

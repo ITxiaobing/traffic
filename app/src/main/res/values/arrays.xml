@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_city">
+        <item>长春</item>
+        <item>公主岭</item>
+        <item>德惠</item>
+        <item>扶余</item>
+        <item>吉林</item>
+        <item>九台</item>
+        <item>蛟河</item>
+        <item>敦化</item>
+        <item>安图</item>
+        <item>龙井</item>
+        <item>延吉</item>
+        <item>图们</item>
+    </string-array>
+</resources>

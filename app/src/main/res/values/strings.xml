@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">吉林交通</string>
+    <string name="title_activity_jucefuwu">JucefuwuActivity</string>
+    <string name="title_activity_duanqi">DuanqiActivity</string>
+    <string name="title_activity_jingxihua">JingxihuaActivity</string>
+    <string name="title_activity_xunyubao">XunyubaoActivity</string>
+    <string name="title_activity_nongqiyubao">NongqiyubaoActivity</string>
+    <string name="title_activity_qitayubao">QitayubaoActivity</string>
+    <string name="title_activity_duanshiwenziyubao">DuanshiwenziyubaoActivity</string>
+    <string name="title_activity_xiugaimima">XiugaimimaActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_denglu_zhuce">DengluZhuceActivity</string>
+    <string name="zaiqing_title">灾情信息</string>
+    <string name="wo_title">我</string>
+    <string name="wo_banben">版本</string>
+    <string name="wo_banben_content">当前版本为最新版本</string>
+    <string name="wo_queding">确定</string>
+    <string name="juececailiao_title">决策材料</string>
+    <string name="jiaotongqixiang_title">交通气象</string>
+    <string name="chengshiqixiang_title">城市气象</string>
+    <string name="actitle_title_add_city">添加城市</string>
+    <string name="actitle_title_duanqiwenziyubao">短气文字预报</string>
+    <string name="actitle_title_duanshiwenziyubao">短时文字预报</string>
+    <string name="actitle_title_jingxihua">精细化服务</string>
+    <string name="actitle_title_juecefuwu">决策服务</string>
+    <string name="actitle_title_nongqiyubao">农气预报</string>
+    <string name="actitle_title_qitayubao">其他预报</string>
+    <string name="actitle_title_xunyuebao">旬月报</string>
+    <string name="xiugaimim_updatemim">修改密码</string>
+    <string name="xiugaimim_queding">确    定</string>
+    <string name="yonghuzhuce_title">用户注册</string>
+    <string name="xiugaimim_mim">密   码</string>
+    <string name="xiugaimim_yonghuming">用户名</string>
+    <string name="xiugaimim_lijizhuce">立即注册</string>
+    <string name="xiugaimim_qingshuruphone">请输入您的手机号码</string>
+    <string name="xiugaimim_qingzaicishurumima">您输入的手机号码不正确请重新输入</string>
+    <string name="xiugaimima_mima_no_null">您第一次输入的密码不能为空</string>
+    <string name="xiugaimima_erci_mima_no_null">您第二次输入的密码不能为空</string>
+    <string name="xiugaimima_mima_no_tong">您两次输入的密码不一致</string>
+    <string name="press_exit">再按一次退出程序</string>
+    <string name="save_password">记住密码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="login">登    录</string>
+    <string name="register">注    册</string>
+    <!-- 实况 -->
+    <string name="update_time">今天%1$s更新</string>
+    <string name="humidity_weather">湿度&#160;&#160;:&#160;%1$s</string>
+    <string name="pressure_weather">气压 &#160;&#160;:&#160;&#160;%1$shpa</string>
+    <string name="qiwen_weather">%1$s&#160;℃</string>
+    <string name="current_qiwen">气温&#160;&#160;:&#160;%1$s&#160;℃</string>
+    <string name="today">今天</string>
+    <string name="tomorrow">明天</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="finish">完成</string>
+    <string name="tianqi_fabu">天气发布</string>
+    <string name="seven_day_weather">5天预报</string>
+    <string name="current_city">当前选择城市&#160;&#160;:&#160;%1$s</string>
+    <string name="zhishu_update_time">更新时间于&#160;&#160;:&#160;%1$s</string>
+    <string name="current_region">当前城市&#160;&#160;:&#160;%1$s</string>
+    <!--决策材料-->
+    <string name="jue_short_time">短时文字预报</string>
+    <string name="jue_cai_liao">决策服务材料</string>
+    <string name="jue_jing_hua">精细化预报</string>
+    <string name="jue_nong_qi">农气预报</string>
+    <string name="jue_short_period">短期文字预报</string>
+    <string name="jue_xun">旬月报</string>
+    <string name="jue_other">其他预报</string>
+    <!--发布灾情-->
+    <string name="empty_area">地理位置不能为空</string>
+    <string name="empty_content">请您输入发表内容</string>
+    <string name="empty_picture">请您选择上传图片</string>
+    <string name="select_picture">选择图片</string>
+</resources>

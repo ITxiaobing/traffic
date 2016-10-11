@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress DeprecatedClassUsageInspection -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.zksn.jilinjiaotong">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--suppress DeprecatedClassUsageInspection, DeprecatedClassUsageInspection, DeprecatedClassUsageInspection, DeprecatedClassUsageInspection -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".WeatherApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="wMm6XviwcxG1afT1Ws6uw8owkyfaqVzv"/>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeActity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".activity.JucefuwuActivity"
+            android:label="@string/title_activity_jucefuwu"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.DuanqiActivity"
+            android:label="@string/title_activity_duanqi"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="activity.JingxihuaActivity"
+            android:label="@string/title_activity_jingxihua"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.XunyubaoActivity"
+            android:label="@string/title_activity_xunyubao"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.NongqiyubaoActivity"
+            android:label="@string/title_activity_nongqiyubao"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.QitayubaoActivity"
+            android:label="@string/title_activity_qitayubao"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.DuanshiwenziyubaoActivity"
+            android:label="@string/title_activity_duanshiwenziyubao"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.XiugaimimaActivity"
+            android:label="@string/title_activity_xiugaimima"/>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/title_activity_register"/>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_denglu_zhuce"/>
+        <activity android:name=".activity.AddCityActivity"/>
+        <activity
+            android:name=".activity.BaseActivity"
+            android:label="@string/title_activity_base"/>
+        <activity
+            android:name=".activity.PublicWeatherActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.JingxihuaActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

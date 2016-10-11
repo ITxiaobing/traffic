@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/update_data"
+        android:text="23:00"
+        />
+    <TextView
+        android:id="@+id/wendu"
+        style="@style/update_data"
+        android:text="14"
+        />
+    <TextView
+        android:id="@+id/shidu"
+        style="@style/update_data"
+        android:text="120"
+        />
+    <TextView
+        android:id="@+id/jiangshui"
+        style="@style/update_data"
+        android:text="100mm"
+        />
+    <TextView
+        android:id="@+id/fengxiang"
+        style="@style/update_data"
+        android:text="北风"
+        />
+    <TextView
+        android:id="@+id/fengli"
+        style="@style/update_data"
+        android:text="3级"
+        />
+
+</LinearLayout>

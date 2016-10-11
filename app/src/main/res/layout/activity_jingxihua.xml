@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="24dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="今天吉林天气:晴,气温-18℃~-5℃,微风
+明天吉林天气:晴,气温-15℃~-4℃,微风
+后天吉林天气:晴,气温-17℃~-6℃,微风
+3天后吉林天气:晴,气温-15℃~-4℃,微风
+4天后吉林天气:多云,气温-16℃~-3℃,微风
+5天后吉林天气:晴,气温-14℃~-3℃,微风" />
+
+</RelativeLayout>

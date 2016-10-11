@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:background="#fff0efed"
+        android:layout_marginTop="0.1dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="震动"
+            android:textColor="@color/tan_white"
+            android:textSize="18sp" />
+
+        <net.colindodd.toggleimagebutton.ToggleImageButton
+            android:id="@+id/togbt_zhendong"
+            style="@style/toggle_button"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:paddingLeft="10dp"
+        android:background="#fff0efed"
+        android:textColor="#A5A3A4"
+        android:text="是否开启震动" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/textView2"
+        android:background="@color/white"
+        android:textSize="18sp"
+        android:textColor="#A5A3A4"
+        android:text="版本信息" />
+
+        <TextView
+            android:id="@+id/jainchagengxin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:text="检查更新"
+            android:textSize="18sp"
+            android:background="#fff0efed"
+            android:textColor="@color/tan_white"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/jainchagengxin"
+            android:background="#fff0efed"
+            android:textColor="#A5A3A4"
+            android:text="当前版本1.0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/jainchagengxin"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/right" />
+
+</RelativeLayout>
