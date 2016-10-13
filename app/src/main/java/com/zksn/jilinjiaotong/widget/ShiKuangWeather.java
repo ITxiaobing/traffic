@@ -4,25 +4,20 @@ package com.zksn.jilinjiaotong.widget;
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.alibaba.fastjson.JSONObject;
-import com.lidroid.xutils.HttpUtils;
-import com.lidroid.xutils.exception.HttpException;
-import com.lidroid.xutils.http.ResponseInfo;
-import com.lidroid.xutils.http.callback.RequestCallBack;
-import com.lidroid.xutils.http.client.HttpRequest;
 import com.zksn.jilinjiaotong.R;
 import com.zksn.jilinjiaotong.city.SelectCity;
 import com.zksn.jilinjiaotong.city.event.RefreshCityDone;
 import com.zksn.jilinjiaotong.model.ShiKuang;
 import com.zksn.jilinjiaotong.net.Neturl;
+import com.zksn.jilinjiaotong.net.WeatherNetRequest;
 import com.zksn.jilinjiaotong.utils.SpUtils;
 import com.zksn.jilinjiaotong.utils.TimeUtils;
+import com.zksn.jilinjiaotong.utils.ToastUtils;
 
 import de.greenrobot.event.EventBus;
 
@@ -76,19 +71,19 @@ public class ShiKuangWeather extends LinearLayout {
             code = SpUtils.getCurrentCity(mContext);
         }
         mCurrentName.setText(String.format(mContext.getString(R.string.current_region), SelectCity.getSelectCity(code)));
-        HttpUtils httpUtils = new HttpUtils();
-        Log.d("tag", Neturl.SHI_KUANG + "?key=" + code);
-        httpUtils.send(HttpRequest.HttpMethod.GET, Neturl.SHI_KUANG + "?key=" + code, new RequestCallBack<String>() {
+        new WeatherNetRequest(mContext).getRequestData(Neturl.SHI_KUANG + "?key=" + code, new WeatherNetRequest.RequestResultListener() {
+
             @Override
-            public void onSuccess(ResponseInfo<String> responseInfo) {
-                ShiKuang shikuang = JSONObject.parseObject(responseInfo.result, ShiKuang.class);
-                resolveData(shikuang);
+            public void requestFail() {
+                ToastUtils.setShowTop(mContext, "获取数据失败");
             }
 
             @Override
-            public void onFailure(HttpException e, String s) {
+            public void requestSuccess(Object result) {
+                ShiKuang shikuang = (ShiKuang) result;
+                resolveData(shikuang);
             }
-        });
+        }, ShiKuang.class);
     }
 
     protected void resolveData(ShiKuang shiKuang) {
